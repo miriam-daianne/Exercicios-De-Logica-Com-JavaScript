@@ -1,4 +1,4 @@
-function plusMinus(arr){
+function plusMinus(arr) {
 
     let n = arr.length;
     let pos = 0;
@@ -24,18 +24,15 @@ function plusMinus(arr){
     ratioZero = ratioZero.toFixed(6);
 
 
-    return [ratioPos, ratioNeg, ratioZero];
+    console.log(ratioPos);
+    console.log(ratioNeg);
+    console.log(ratioZero);
+
 }
 
-let c =[-4,3,-9,0,4,1];
+let d = [-4, 3, -9, 0, 4, 1];
 
-console.log(plusMinus(c)[0]);
-console.log(plusMinus(c)[1]);
-console.log(plusMinus(c)[2]);
+console.log(plusMinus(d));
 
-let d = [-3,-2,-1,1,2,3,0,0];
 
-console.log(plusMinus(d)[0]);
-console.log(plusMinus(d)[1]);
-console.log(plusMinus(d)[2]);
 
