@@ -12,27 +12,20 @@ function minMaxSum(arr){
         sum += arr[i];
 
         if(arr[i] > max){
-
             max = arr[i];
         }
 
         if( arr[i] < min){
-
             min = arr[i];
-
         }
-
     }
-
 
     minSum = sum - max;
     maxSum = sum - min;
     
 
     console.log(minSum + " " + maxSum);
-
 }
 
+minMaxSum([1,2,3,4,5]);
 
-let e = [1,2,3,4,5];
-console.log(minMaxSum(e));
