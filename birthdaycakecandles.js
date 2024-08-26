@@ -22,3 +22,6 @@ function birthdayCakeCandles(candles){
 let e = [4,4,3,1];
 
 console.log(birthdayCakeCandles(e));
+
+
+//  não ta passando nos demais testes 
