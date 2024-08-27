@@ -32,4 +32,3 @@ console.log(timeConvertion(h));
 console.log(timeConvertion(i));
 
 
-// falhas nos demais testes 
