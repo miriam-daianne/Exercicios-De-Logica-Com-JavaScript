@@ -1,16 +1,22 @@
 function timeConvertion(time){
 
-    let timeParts = time.split(':');
+    let timeParts= time.split(':');
+    let hours = parseInt(timeParts[0]);
+    let min = timeParts[1];
+    let sec = timeParts[2].slice(0,2);
+    let period = timeParts[2].slice(-2);
 
-    let hours = parseInt(time[0]);
-
-    if(time[2] == "PM" && hours < 12){
-        hours+= 12;
+    if(period === "PM" && hours < 12){
+        hours+=12;
     }
 
-    let newTime = hours.toString
+    let newTime = hours.toString()+':'+ min +':'+ sec;
 
-
+    return newTime;
 }
 
-// terminar isso que eu não faço a menor ideia de como fazer 
+let f = "03:25:00PM"
+
+console.log(timeConvertion(f));
+
+// falhas nos demais testes 
